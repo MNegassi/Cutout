@@ -4,7 +4,7 @@ This repository attempts to optimize the hyperparameters of Cutout. It is based 
 code from the Cutout repository.
 
 # How to install
-##Dependencies
+## Dependencies
 
 ```
 pip install -r requirements.txt
