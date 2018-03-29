@@ -1,4 +1,4 @@
-# Optmize-Cutout
+# Opt-Cutout
 
 This repository attempts to optimize the hyperparameters of Cutout. It is based on
 code from the Cutout repository.
