@@ -140,6 +140,7 @@ def run_cutout(dataset="cifar10", model="resnet18", epochs=200, batch_size=128,
         scheduler = MultiStepLR(cnn_optimizer, milestones=[60, 120, 160], gamma=0.2)
 
 
+    #TODO: change path to relative path
     filename = "/beegfs/work/workspace/ws/fr_mn119-augment-0/logs/{}.csv".format(test_id)
     # filename = 'logs/' + test_id + '.csv'
 
@@ -259,7 +260,7 @@ def main():
                         help='random seed (default: 1)')
 
     args = parser.parse_args()
-    run(**args.__dict__)
+    run_cutout(**args.__dict__)
 
 if __name__ == "__main__":
     main()
