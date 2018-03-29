@@ -1,5 +1,39 @@
-# Cutout
+# Optmize-Cutout
 
+This repository attempts to optimize the hyperparameters of Cutout. It is based on
+code from the Cutout repository.
+
+# How to install
+##Dependencies
+
+```
+pip install -r requirements.txt
+pip3 install http://download.pytorch.org/whl/cu80/torch-0.3.1-cp35-cp35m-linux_x86_64.whl 
+pip3 install torchvision
+```
+It use the hyperparameter optimizer: hyperband and model-based hyperband **BO-HB** 
+![hpbandster](https://github.com/automl/HpBandSter)
+
+
+
+Bibtex:  
+```
+@INPROCEEDINGS{bohb17,
+ author    = {S. Falkner and A. Klein and F. Hutter},
+ title     = {Combining Hyperband and Bayesian Optimization},
+ booktitle = {NIPS 2017 Bayesian Optimization Workshop},
+ year      = {2017},
+ month     = dec,
+}
+```
+
+# Examples
+To optimize ResNet18 on CIFAR10 with data augmentation and cutout:    
+
+`python cutout_configspace.py --dataset=cifar10 --model=resnet18 --max-epochs=160 --optimizer=BOHB --run-id=1 
+
+# Cutout
+ 
 This repository contains the code for the paper [Improved Regularization of Convolutional Neural Networks with Cutout](https://arxiv.org/abs/1708.04552). 
 
 ## Introduction
