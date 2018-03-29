@@ -1,0 +1,5 @@
+tqdm>=4.11.2
+numpy>=1.14.2
+ConfigSpace>=0.4.6
+torch>=0.3.0.post4
+torchvision>=0.2.0
