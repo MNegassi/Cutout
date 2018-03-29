@@ -1,6 +1,7 @@
 # Opt-Cutout
 
-This repository attempts to optimize the hyperparameters of Cutout. It is based on
+This repository attempts to optimize the hyperparameters of Cutout: Cutout length
+and number of cutouts(no\_holes). It is based on
 code from the Cutout repository.
 
 # How to install
