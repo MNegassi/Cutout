@@ -120,7 +120,7 @@ def main():
         config_generator=CG,
         run_id='0',
         eta=2,
-        min_budget=10,
+        min_budget=20,
         max_budget=args.max_epochs,
         nameserver=nameserver,
         ns_port=ns_port,
